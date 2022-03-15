@@ -1,0 +1,128 @@
+:root {
+    --grid-column: 12;
+  }
+  
+* {
+    box-sizing: border-box;
+    margin: 0;   
+    padding:0;
+  }
+
+body {
+    width: 100vw;
+    height: auto;
+    font-family: 'Lato' sans-serif;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    border: solid 1px;
+    position: relative;
+}
+
+.videoback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgb(165, 162, 162);
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+}
+
+.section1-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.section1-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: calc(100%/var(--grid-column));
+    margin-right: calc(100%/var(--grid-column));
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.section1-logo-center{
+    margin-left: calc((100%/var(--grid-column))*3.5);
+}
+
+.section1-nav-title{
+    flex:3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.section1-nav-icon{
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 14px;
+}
+
+.section1-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 300px;
+    color: white;
+    justify-content: center;
+}
+
+.section1-footer-head {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2{
+    background-color: rgb(235, 230, 223);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: calc(100%/var(--grid-column));
+    margin-right: calc(100%/var(--grid-column));
+}
+
+.section2-head{
+    margin: 30px;
+    font-size: 30px;
+}
+
+.section2-foot {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.section2-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2 {
+    margin: 20px ;
+}

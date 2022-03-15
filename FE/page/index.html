@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/x-icon" href="../icon-128x128.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class='sidebar' id='sidebar'>
+        <div id="collapse-btn" class='toggle-btn' onclick='toggleSidebar()'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <!--<header>ERP SYSTEM</header>-->
+        
+            <div class='sidebar-title'><i class='fa fa-qrcode'></i><span>Dashboard</span></div>
+            <div class='sidebar-title'><i class='fa fa-link'></i><span>Manage Record</span></div>
+            <div class='sidebar-title'><i class='fa fa-steam'></i><span>Manage Sources</span></div>
+            <div class='sidebar-title'><i class='fa fa-calendar'></i><span>Users</span></div>
+            <div class='sidebar-title'><i class='fa fa-life-saver'></i><span>Roles</span></div>
+            <div class='sidebar-title'><i class='fa fa-camera-retro'></i><span>Clients</span></div>
+            <div class='sidebar-title'><i class='fa fa-cloud-download'></i><span>Filters</span></div>
+            <div class='sidebar-title'><i class='fa fa-coffee'></i><span>Logs</span></div>
+        
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <p>DASHBOARD</p>
+            <p>Log out</p>
+        </div>
+        <div class="postcard">
+            <div class="postcard-item">
+                <div>noi dung</div>
+            </div>
+            <div class="postcard-item">
+                <div>noi dung</div>
+            </div>
+            <div class="postcard-item">
+                <div>noi dung</div>
+            </div>
+            <div class="postcard-item">
+                <div>noi dung</div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="table-header">
+                <p>TABLE</p>
+                <p>Views</p>
+            </div>
+            <table>
+            
+                <tr>
+                    <th>No</th>
+                    <th><div style='width: 150px;'>Name</div></th>
+                    <th>Code</th>
+                    <th><div style='width: 150px;'>Link</div></th>
+                    <th>Date Time</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>Name1</th>
+                    <th>0000</th>
+                    <th>Link1</th>
+                    <th>01/03/2022</th>
+                    <th><button>action</button></th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Name2</th>
+                    <th>0000</th>
+                    <th>Link1</th>
+                    <th>01/03/2022</th>
+                    <th><button>action</button></th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>Name3</th>
+                    <th>0000</th>
+                    <th>Link1</th>
+                    <th>01/03/2022</th>
+                    <th><button>action</button></th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>Name4</th>
+                    <th>0000</th>
+                    <th>Link1</th>
+                    <th>01/03/2022</th>
+                    <th><button>action</button></th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <th>Name5</th>
+                    <th>0000</th>
+                    <th>Link1</th>
+                    <th>01/03/2022</th>
+                    <th><button>action</button></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+<script type="text/javascript">
+    function toggleSidebar(){
+        console.log('CLICK');
+    var spanArr =  document.querySelectorAll('.sidebar-title span');
+    spanArr.forEach(function(span) {
+        console.log(span);
+        span.classList.toggle('active');
+    });
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('collapse-sidebar');
+    var btn = document.getElementById('collapse-btn');
+    btn.classList.toggle('collapse-btn');
+}
+</script>
+</html>

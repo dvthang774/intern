@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+  }
+  
+.sidebar {
+    display: flex;
+    flex: auto;
+    flex: 1;
+    flex-direction: column;
+    max-width: 200px;
+    min-height: calc(100vh - 100px);
+    height: 100%;
+    border: 1px solid;
+    background:#151719;
+    margin: 5px;
+    position: relative;
+    transition: all ease 1s;
+    will-change: border;
+}
+.sidebar header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid;
+    justify-content: center;
+    color:rgba(230,230,230, 0.9);
+}
+
+.sidebar-title {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 10px;
+    align-items: center;
+    text-align: left;
+    border-bottom: 3px solid rgba(100,100,100,0.3);
+    margin: 5px;
+    justify-content: left;
+    color:rgba(230,230,230, 0.9);
+}
+
+.sidebar-title i,span {
+    display: flex;
+    margin-right: 10px;
+}
+
+.active {
+    display: none;
+}
+
+.collapse-sidebar {
+    width: 50px;
+}
+
+.collapse-btn {
+    left: 50px !important;
+}
+
+#sidebar .toggle-btn{
+    position : absolute;
+    left:200px;
+    top: 10px;
+  }
+  
+#sidebar .toggle-btn span {
+    display: block;
+    width:30px;
+    height:5px;
+    background: #151719;
+    margin: 5px 0px;
+  }
+  
+
+
+.content {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    
+}
+.content-header {
+    display: flex;  
+    flex: 1;
+    justify-content: space-between; 
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top: 30px;
+}
+.content-header p {
+    display: flex;   
+    padding: 10px;
+}
+
+.postcard {
+    display: flex;
+    
+    padding: 10px;
+    flex: 1;
+    margin-top: 100px;
+}
+
+
+.postcard-item {
+    display: flex;
+    flex: 1;
+    border: 1px solid;
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+    position: relative;
+    background-color: #cccccc;
+    border-radius: 10px;
+    z-index: 1;
+}
+.postcard-item > div {
+    display: flex;
+    border: 1px solid;
+    padding: 10px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    background-color: rgb(212, 219, 219);
+    border-radius: 50px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    z-index: 2;
+}
+
+.table {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: beige;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: left;
+}
+.table-header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.table-header p {
+    display: flex;
+    padding: 10px;
+}
+
+.table th, td {
+    border-bottom: 1px solid #ddd;
+  }
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

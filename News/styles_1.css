@@ -1,0 +1,101 @@
+/*set padding & magging*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* set body cơ bản*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  image{
+    float: left;
+  }
+.header {
+    padding: 40px;
+    font-size: x-large;
+    text-align: left;
+    background-color: orange;
+    color: aliceblue;
+}
+.header a{
+  display: flex;
+  align-items: center;
+}
+/*set navbar cơ bản*/
+.navbar {
+    overflow: hidden;
+    background-color: rgb(135, 11, 21);
+    position: sticky;
+
+    top: 0;
+    color: aliceblue;
+    text-align: center;
+    padding: 12px;
+    
+  }
+ .menu-mobile{
+   display: none;
+ }
+
+.navbar > .menu-pc a {
+    display: block;
+    color: white;
+    padding: 18px;
+    text-decoration: none;
+  }
+.navbar > .menu-pc a:hover {
+    text-decoration: underline rgb(255, 255, 255) ;
+}
+
+.nav-icon{
+  display: none !important;
+  float: left;
+}
+.menu-pc li{
+  text-decoration: none;
+  display: inline-block;
+}
+.column-content {
+  display: table;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.column-content::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.colummn-cotent-side{
+  width: 25%;
+}
+.column-content-mid{
+  width: 50%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+    .menu-pc {
+      display: none;
+    }
+    .menu-pc li{
+      display: block;
+      text-align: left;
+    }
+   
+    .nav-icon{
+      display: inline-block !important;
+      cursor: pointer;
+    }
+    .nav-icon:hover + .menu-pc, .menu-pc:hover {
+      display: block !important;
+    }
+  }
+  
+

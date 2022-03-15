@@ -1,0 +1,97 @@
+:root {
+    --grid-column: 8;
+  }
+  
+
+* {
+    box-sizing: border-box;
+    margin: 0;   
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    font-family:  'open sans', sans-serif;
+}
+
+.landing {
+    display: flex;
+    height: 100vh;
+    background: url(https://wallpapercave.com/wp/wp9550935.jpg) no-repeat;
+    background-size: 175%;
+    background-position: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.landing > .color-overlay {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(221, 219, 219);
+    opacity: .3;
+    position: absolute;
+    z-index: 1;
+  }
+
+
+.landing h1 {
+    font-size: 70px;
+    z-index: 1;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: calc(100%/var(--grid-column));
+    margin-right: calc(100%/var(--grid-column));
+    color: white;
+}
+
+.main-content h2 {
+    border-bottom: 2px solid;
+    margin-top: 20px;
+}
+
+.main-content p {
+    padding: 20px;
+}
+
+.main-content-img img{
+    width: 200px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.section1 p {
+    flex: 2;
+}
+.section1 div {
+    flex:1;
+}
+
+.section1 > .main-content-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
